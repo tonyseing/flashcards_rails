@@ -1,0 +1,24 @@
+// Place all the styles related to the flashcards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.question_and_answer{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border-style: dotted;
+	border-width: 1px;
+	padding: 14px;
+}
+
+div.question {
+	text-decoration: underline;
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+div.answer {
+	font-size: 20px;
+	margin-bottom: 20px
+}

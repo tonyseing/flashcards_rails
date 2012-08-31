@@ -11,3 +11,10 @@
  *= require_self
  *= require_tree .
  */
+
+div#content {
+	width: 600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
