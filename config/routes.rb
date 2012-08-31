@@ -1,4 +1,18 @@
 Flashcards2::Application.routes.draw do
+  root :to => 'bundles#index'
+
+
+  match 'bundles/:id/use_flash_cards' => 'bundles#use_flash_cards'
+  match 'bundles/:bundle_id/get_random_card' => 'flashcards#get_random_card'
+
+  resources :bundles do
+      resources :flashcards
+
+  end
+
+
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

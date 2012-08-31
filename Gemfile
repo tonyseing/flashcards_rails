@@ -6,7 +6,11 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'bson_ext'
+gem 'mongoid'
+gem 'devise'
 
+gem "twitter-bootstrap-rails", :group => :assets
 
 # Gems used only for assets and not required
 # in production environments by default.

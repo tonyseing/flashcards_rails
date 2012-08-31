@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @bundle.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @bundle.description %>
+</p>
+
+<br/>
+<div id="flashcards_list">
+<%= render 'flashcards_list' %>
+</div>
+<br/><br/><br/><br/>
+
+<%= link_to 'Use Flash cards', :controller => 'bundles', :action => 'use_flash_cards', :bundle_id => @bundle._id %>
+
+<%= link_to 'Back to bundles list', bundles_path %>

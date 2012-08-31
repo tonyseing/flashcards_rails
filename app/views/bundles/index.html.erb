@@ -1,0 +1,23 @@
+<h1>Listing bundles</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bundles.each do |bundle| %>
+  <tr>
+    <td><%= bundle.name %></td>
+    <td><%= bundle.description %></td>
+    <td><%= link_to 'Flashcards', bundle %></td>
+    <td><%= link_to 'Delete', bundle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bundle', new_bundle_path %>
