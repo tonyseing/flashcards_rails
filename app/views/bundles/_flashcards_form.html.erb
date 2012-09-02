@@ -1,3 +1,20 @@
+<script type="text/javascript">
+$(document).ready(function() {
+    tinyMCE.init({
+            mode : "textareas",
+            theme : "simple",
+            editor_selector : "question"
+    });
+
+    tinyMCE.init({
+            mode : "textareas",
+            theme : "advanced",
+            editor_selector : "answer"
+    });
+});
+</script>
+
+
 <%= form_for([@bundle, @flashcard]) do |f| %>
   <% if @flashcard.errors.any? %>
     <div id="error_explanation">
@@ -13,11 +30,11 @@
 
   <div class="field">
     <%= f.label :question %><br />
-    <%= f.text_field :question %>
+    <%= f.text_field :question, :class => 'question' %>
   </div>
   <div class="field">
     <%= f.label :answer %><br />
-    <%= f.text_field :answer %>
+    <%= f.text_field :answer. :class => 'answer' %>
   </div>
   <div class="actions">
     <%= f.submit %>

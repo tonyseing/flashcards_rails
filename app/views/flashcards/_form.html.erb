@@ -1,3 +1,12 @@
+<script type="text/javascript">
+$(document).ready(function() {
+    tinyMCE.init({
+            mode : "textareas",
+            theme : "advanced"    });
+
+});
+</script>
+
 <%= form_for([@bundle, @flashcard]) do |f| %>
   <% if @flashcard.errors.any? %>
     <div id="error_explanation">

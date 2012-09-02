@@ -2,12 +2,12 @@
 
 <p>
   <b>Question:</b>
-  <%= @flashcard.question %>
+  <%= @flashcard.question.html_safe %>
 </p>
 
 <p>
   <b>Answer:</b>
-  <%= @flashcard.answer %>
+  <%= @flashcard.answer.html_safe %>
 </p>
 
 

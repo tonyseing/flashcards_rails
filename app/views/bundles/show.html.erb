@@ -16,6 +16,6 @@
 </div>
 <br/><br/><br/><br/>
 
-<%= link_to 'Use Flash cards', :controller => 'bundles', :action => 'use_flash_cards', :bundle_id => @bundle._id %>
+<i class="icon-play-circle"></i> <%= link_to 'Run Flash Cards', :controller => 'bundles', :action => 'use_flash_cards', :bundle_id => @bundle._id %> &nbsp;&nbsp;&nbsp;
 
-<%= link_to 'Back to bundles list', bundles_path %>
+<i class="icon-home"></i> <%= link_to 'Back to Flash Card Decks', bundles_path %>
